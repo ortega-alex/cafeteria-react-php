@@ -58,10 +58,7 @@ class Login extends Component {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
-                var data = new FormData();
-                data.append('pass', values.pass);
-                data.append('usuario', values.usuario);
-                this.props.dispatch(UsuarioActions.login(data));
+                this.props.dispatch(UsuarioActions.login(values));
             }
         });
     }
@@ -119,11 +116,8 @@ class Login extends Component {
             if (!err) {
                 const { usuario } = this.props;
                 if (values.pass_new == values.pass_repit) {
-                    var data = new FormData();
-                    data.append('id_usuario', usuario.id_usuario);
-                    data.append('pass_new', values.pass_new);
-
-                    this.props.dispatch(UsuarioActions.changePass(data));
+                    values.id_usuario = usuario.id_usuario;
+                    this.props.dispatch(UsuarioActions.changePass(values));
                 } else {
                     Funciones.message("warning", "La contraseña no coincide!");
                 }

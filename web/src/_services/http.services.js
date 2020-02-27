@@ -11,10 +11,12 @@ const http = {
 }
 
 function _POST(_url, _data) {
+    const data = new FormData();
+    Object.keys(_data).forEach(key => data.append(key, _data[key]));
     return fetch(_URL + _url, {
         method: 'POST',
         headers: _HEADERS,
-        body: _data
+        body: data
     }).then(handleResponse);
 }
 
