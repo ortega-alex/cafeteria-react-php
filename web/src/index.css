@@ -10,7 +10,7 @@ code {
 }
 
 .app {
-    display: inline-flex;
+    /* display: table-row; */
     height: 98vh !important;
     width: 100% !important;
     overflow: hidden;
@@ -50,4 +50,13 @@ code {
     .login {
         width: 90%;
     }
+}
+
+.navbarNav {
+    position: relative;
+}
+
+.nav-login {
+    position: absolute;
+    right: 100px;
 }
