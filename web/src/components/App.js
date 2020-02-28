@@ -4,7 +4,7 @@ import store from './ConfigureStore';
 import { Provider } from 'react-redux';
 
 import Loading from '../_helpers/loading.component';
-import Menu from './menu.compoent';
+import Menu from './menu/menu.compoent';
 import Login from './usuario/login.compoent';
 
 class App extends Component {

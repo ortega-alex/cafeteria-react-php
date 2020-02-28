@@ -10,7 +10,7 @@ code {
 }
 
 .app {
-    /* display: table-row; */
+    position: relative;
     height: 98vh !important;
     width: 100% !important;
     overflow: hidden;
@@ -59,4 +59,15 @@ code {
 .nav-login {
     position: absolute;
     right: 100px;
+}
+
+.menu-contenido {
+    position: absolute;
+    bottom: 200px;
+    right: 250px;
+}
+
+.contenido {
+    height: 100%;
+    width: 100%;
 }
