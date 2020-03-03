@@ -1,0 +1,34 @@
+{
+    "tiendas": [
+        {
+            "METHOD": "GET",
+            "URL": "http://localhost/cafeteria/api/src/tienda/tienda.php?get_tipos=true",
+            "PARAMS": "",
+            "DESCRIPCION": "devuelve todos los tipos sin importar el estado"
+        },
+        {
+            "METHOD": "GET",
+            "URL": "http://localhost/cafeteria/api/src/tienda/tienda.php?get_tipos_activos=true",
+            "PARAMS": "",
+            "DESCRIPCION": "devulve todos los tipos activos (estado == 1)"
+        },
+        {
+            "METHOD": "POST",
+            "URL": "http://localhost/cafeteria/api/src/tienda/tienda.php?get_productos_tipo=true",
+            "PARAMS": "id_tipo (id de la tabla tipo recuperado de los servicios get_tipos y get_tipos_activos) ",
+            "DESCRIPCION": "devulve todos los productos por tipo y que esten activos (estado == 1)"
+        },
+        {
+            "METHOD": "GET",
+            "URL": "http://localhost/cafeteria/api/src/tienda/tienda.php?get_productos_activos=true",
+            "PARAMS": "",
+            "DESCRIPCION": "devulve todos los productos activos (estado == 1)"
+        },
+        {
+            "METHOD": "GET",
+            "URL": "http://localhost/cafeteria/api/src/tienda/tienda.php?get_productos=true",
+            "PARAMS": "",
+            "DESCRIPCION": "devuelve todos los productos sin importar el estado"
+        }
+    ]
+}
