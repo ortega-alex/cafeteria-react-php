@@ -26,3 +26,6 @@ yarn-error.log*
 # api
 api/public
 api/libs
+
+# conexion
+api/src/config/dbClassMysql.php
