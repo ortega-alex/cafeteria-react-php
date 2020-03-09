@@ -30,5 +30,6 @@
             "PARAMS": "",
             "DESCRIPCION": "devuelve todos los productos sin importar el estado"
         }
-    ]
+    ],
+    "img" : "http://localhost/cafeteria/api/public/img/{path}"
 }
